@@ -132,7 +132,8 @@ img{
 }
 
 .section-title,
-.home_title{
+.home_title,
+.contact_title{
     font-family: var(--title-font);
     font-size: var(--font-xl);
     font-weight: bold;
@@ -147,7 +148,8 @@ img{
 
 @media screen and (max-width: 340px) {
     .section-title,
-    .home_title {
+    .home_title,
+    .contact_title {
         font-size: 2rem;
     }    
 }
@@ -344,7 +346,8 @@ img{
 @media screen and (min-width: 576px) {
     .home_container,
     .about_container,
-    .coming_container {
+    .coming_container,
+    .contact_container {
         grid-template-columns: 0.7fr;
         justify-content: center;
     }
@@ -353,7 +356,8 @@ img{
 @media screen and (min-width: 768px) {
     .home_container,
     .about_container,
-    .coming_container {
+    .coming_container,
+    .contact_container {
         position: relative;
         grid-template-columns: 240px 300px;
     }
@@ -362,7 +366,8 @@ img{
 @media screen and (min-width: 1024px) {
     .home_container,
     .about_container,
-    .coming_container {
+    .coming_container,
+    .contact_container {
         position: relative;
         grid-template-columns: 480px 500px;
     }
@@ -760,3 +765,33 @@ img{
 /*------------------------Scroll Up-----------------------*/
 
 /* Show Scroll Up */
+
+/*------------------------Contact-----------------------*/
+.contact {
+    position: relative;
+}
+
+.contact_container {
+    row-gap: 3rem;
+    justify-self: center;
+}
+
+.contact_data {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .contact_data{
+        text-align: initial;
+        order: -1;
+    }
+}
+
+.contact_title {
+    font-size: var(--font-2xl);
+    margin-bottom: 1rem;
+}
+.contact_description{
+    padding:0 1rem;
+    margin-bottom: 2.5rem;
+}
