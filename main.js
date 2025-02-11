@@ -41,5 +41,31 @@ navLink.forEach(link => link.addEventListener('click', () =>{
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DARK LIGHT THEME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+const themebutton = document.getElementById('theme-button');
 
+if(localStorage.getItem('mode') == 'dark') {
+    darkmode();
+} else {
+    lightmode();
+}
+
+themebutton.addEventListener('click', (e) => {
+    if(localStorage.getItem('mode') == 'light') {
+        darkmode();
+    } else {
+        lightmode();
+    }
+})
+
+function darkmode() {
+    document.body.classList.add('dark-theme');
+    themebutton.classList.replace('fa-moon', 'fa-sun');
+    localStorage.setItem('mode', 'dark')   
+}
+
+function lightmode() {
+    document.body.classList.remove('dark-theme');
+    themebutton.classList.replace('fa-sun', 'fa-moon');
+    localStorage.setItem('mode', 'light')   
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

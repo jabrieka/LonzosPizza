@@ -96,6 +96,24 @@ img{
     transform: rotate(245deg);
 }
 /*-----------------------Variables Dark Theme--------------------*/
+body.dark-theme {
+    --primary-color: #9b0000;
+    --primary-color-alt: #600202;
+    --title-color: #f5e8bfee;
+    --text-color: #fecece;
+    --body-color: #271818;
+    --container-color: #1b1212;
+}
+
+.dark-theme .bg-header,
+.dark-theme .nav_menu,
+.dark-theme .scrollup {
+    box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.5);
+}
+
+.dark-theme .popular_card {
+    box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.5);
+}
 
 /*------------------------Reusable Css classes-----------------------*/
 
@@ -746,7 +764,6 @@ img{
 }
 
 .social-link {
-    color: var(--primary-color);
     font-size: 1.25rem;
     transition: color 0.3s, transform 0.3s;
 }
