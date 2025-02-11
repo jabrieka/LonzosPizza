@@ -8,10 +8,10 @@
     --primary-color: #9b0000;
     --primary-color-alt: #600202;
     --title-color: #3e2929;
-    --text-color: #987777;
+    --text-color: #591616;
     --text-color-light: #eea7a7;
-    --body-color: #f5e8bfee;
-    --container-color: #fffcd8;
+    --body-color: #fff;
+    --container-color: #dedcdc;
 
     /*============Font and Typography==========*/
     /*.5rem =8px | 1rem = 16px ... */
@@ -156,12 +156,12 @@ body.dark-theme {
     font-size: var(--font-xl);
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: hsl(36, 100%, 96%);
+    color: hsl(0, 0%, 3%);
     stroke-width: 2px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #401c10;
-    stroke: #401c10;
-    text-shadow: 6px 6px 0px #9f7060;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffece6;
+    stroke: #000000;
+    text-shadow: 6px 6px 0px #850303;
 }
 
 @media screen and (max-width: 340px) {
