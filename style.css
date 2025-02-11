@@ -392,22 +392,24 @@ body.dark-theme {
 }
 
 .home_img {
-    width:300px;
+    width:500px;
+    height: 500px;
     justify-self: center;
 }
 
 @media screen and (min-width: 768px) {
     .home_img{
-        width: 300px;
+        width: 400px;
         position: absolute;
         top: 1rem;
-        right: -1rem;
+        right: -4rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .home_img{
         width: 600px;
+        height: 700px;
         position: absolute;
         top: 2rem;
         right: -2rem;
